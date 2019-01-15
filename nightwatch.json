@@ -1,0 +1,39 @@
+{
+  "src_folders" : ["test"],
+   "webdriver" : {
+     "start_process": true
+   },
+
+   "test_settings" : {
+     "default" : {
+       "webdriver": {
+         "server_path": "geckodriver.cmd",
+         "port": 4444,
+         "cli_args": [
+           "--log", "debug"
+         ]
+       },
+       "filter": ["./test/post.e2e.js"],
+       "desiredCapabilities": {
+           "browserName" : "firefox",
+           "acceptInsecureCerts" : true,
+           "moz:webdriverClick" : false
+        }
+     },
+
+     "chrome" : {
+       "webdriver": {
+         "port": 9515,
+         "server_path": "chromedriver.cmd",
+         "cli_args": [
+           "--verbose"
+         ]
+       },
+
+       "desiredCapabilities" : {
+         "browserName" : "chrome",
+         "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}
+       }
+     }
+  }
+}
