@@ -5,12 +5,14 @@
 End-to-end tests use NightwatchJS with:
   * Geckodriver for Firefox,
   * Chromedriver for Chrome
-The e2e command runs tests only in Firefox by default.
+
+The e2e command runs tests only in Firefox by default:
 `yarn e2e`
+
 Add the -e flag to specify the browser driver.
 `yarn e2e -e chrome`
 
-# Notes about the tests, bugs, etc.
+# Notes about scenarios tested, bugs, etc.
 ## General
 I tried to rely on CSS selectors as much as possible since they are less likely to break due to changes over time and faster than XPath. However, imgur.com rarely applies HTML ID attributes so I was forced to rely on CLASS attributes. 
 
