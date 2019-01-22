@@ -1,6 +1,8 @@
 # Setup
 `yarn install`
 
+Browser driver paths ('webdriver': 'server_path') in nightwatch.json are configured for a Windows environment. You may need to change them to something like .bin/chromedriver.
+
 # Running Tests
 End-to-end tests use NightwatchJS with:
   * Geckodriver for Firefox,
