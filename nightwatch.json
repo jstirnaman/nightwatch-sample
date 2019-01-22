@@ -13,7 +13,7 @@
            "--log", "debug"
          ]
        },
-       "filter": ["./test/search.e2e.js"],
+       "filter": ["./test/*.e2e.js"],
        "desiredCapabilities": {
            "browserName" : "firefox",
            "acceptInsecureCerts" : true,
