@@ -9,7 +9,7 @@ End-to-end tests use NightwatchJS with:
 The e2e command runs tests only in Firefox by default:
 `yarn e2e`
 
-Add the -e flag to specify the browser driver.
+Add the -e flag to specify the browser driver:
 `yarn e2e -e chrome`
 
 # Notes about scenarios tested, bugs, etc.
